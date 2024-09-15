@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
-import Editor from './components/Editor';
-import ToggleView from './components/ToggleView';
+import React from 'react';
+import LoginRegister from './components/LoginRegister';
 
 const App: React.FC = () => {
-  const [isEditMode, setIsEditMode] = useState(true);
 
   return (
     <div>
-      <ToggleView isEditMode={isEditMode} setIsEditMode={setIsEditMode} />
-      <Editor isEditMode={isEditMode} />
+      <LoginRegister />
     </div>
   );
 };

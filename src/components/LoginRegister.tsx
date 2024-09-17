@@ -48,11 +48,20 @@ const LoginRegister = () => {
     e.preventDefault();
 
     try {
-      const url = isLogin ? '/api/login' : '/api/register';
+      const url = isLogin ? 'http://localhost:5001/api/login' : 'http://localhost:5001/api/register';
       const response = await axios.post(url, { username, password });
       setMessage(response.data.message);
     } catch (error: any) {
-      setMessage(error.response.data.message);
+      if (error.response) {
+        // Handle server errors
+        setMessage(error.response.data.message);
+      } else if (error.request) {
+        // Handle network errors
+        setMessage('Network error. Please try again.');
+      } else {
+        // Handle other errors
+        setMessage('An error occurred. Please try again.');
+      }
     }
   };
 

@@ -1,0 +1,18 @@
+[
+  {
+    "username": "user1",
+    "password": "password1"
+  },
+  {
+    "username": "madhu2@register",
+    "password": "$2b$10$MgifuYL3VDcpBsQ/jxRED.5K6vHEehG9sH0WhSsGWt/ZlB81vLwaa"
+  },
+  {
+    "username": "madhu12@register",
+    "password": "$2b$10$xVQ9AT6UzPFD5oG8oLbq5ePqbt2zbfOcTaFlVAvxyCdK0pygoyaHi"
+  },
+  {
+    "username": "madhu123@register",
+    "password": "$2b$10$LaLzU6zH1LlSffqMOwMmmuOXHEyF7wlRLaz/0CvxhaPyLbVCz114i"
+  }
+]
